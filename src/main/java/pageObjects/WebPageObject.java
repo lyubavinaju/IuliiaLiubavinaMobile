@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 public class WebPageObject {
     By searchFld = By.xpath("// form/div[1] // input");
 
-    By form = By.cssSelector("form");
+    By suggestions = By.xpath("// *[@role='option'] / div / span ");
 
     By answer = By.xpath("// *[@data-sokoban-grid]");
 

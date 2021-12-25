@@ -2,21 +2,21 @@ package activity;
 
 public enum Activity {
     REGISTRATION("Registration", "Registration"),
-    LOGIN("LoginActivity", "EPAM Test App"),
-    BUDGET("BudgetActivity", "BudgetActivity");
-    private String name;
-    private String title;
+    LOGIN("EPAM Test App", "EPAM Test App"),
+    BUDGET("BudgetActivity", "Budget");
+    private String androidTitle;
+    private String iosTitle;
 
-    Activity(String name, String title) {
-        this.name = name;
-        this.title = title;
+    Activity(String androidTitle, String iosTitle) {
+        this.androidTitle = androidTitle;
+        this.iosTitle = iosTitle;
     }
 
-    public String getName() {
-        return name;
+    public String getAndroidTitle() {
+        return androidTitle;
     }
 
-    public String getTitle() {
-        return title;
+    public String getIosTitle() {
+        return iosTitle;
     }
 }
